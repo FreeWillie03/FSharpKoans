@@ -384,9 +384,7 @@ module ``03: Putting the Function into Functional Programming`` =
         let cows = 
             let start noise = f "cow" noise + ", de gozaru"
             start 
-            
-         
-             
+      
                                                    // <-- multiple words on this line, or you may want to make this a multi-line thing.  You MUST use `f`.
         cows "moo" |> should equal "cow says moo, de gozaru"
         cows "MOOooOO" |> should equal "cow says MOOooOO, de gozaru"
